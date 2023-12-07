@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller">
+    <stylesheets>
+        <URL value="@boje.css" />
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Kec" text="1" GridPane.rowIndex="5" />
+        <Button fx:id="btn2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Dvica" text="2" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Button fx:id="btn3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Trica" text="3" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Button fx:id="btn4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Cetvorka" text="4" GridPane.rowIndex="4" />
+        <Button fx:id="btn5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Petica" text="5" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button fx:id="btn6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Sestica" text="6" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Button fx:id="btn7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Sedmica" text="7" GridPane.rowIndex="3" />
+        <Button fx:id="btn8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Osmica" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button fx:id="btn9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Devetka" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Button fx:id="modBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Modul" text="\%" GridPane.rowIndex="2" />
+        <Button fx:id="divBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Dijeljenje" text="/" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="mltiplBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Mnozenje" text="x" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button fx:id="minusBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Oduzimanje" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <Button fx:id="plusBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Sabiranje" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+        <Button fx:id="dotBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tacka" text="." GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <Button fx:id="btn0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Nula" text="0" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+        <Button fx:id="equalsBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Jednako" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.rowSpan="2" />
+        <Label fx:id="display" maxWidth="1.7976931348623157E308" text="${controller.displej}" GridPane.columnSpan="4" />
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</GridPane>
