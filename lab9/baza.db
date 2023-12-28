@@ -1,0 +1,13 @@
+CREATE TABLE drzava (
+    id INT PRIMARY KEY,
+    naziv TEXT,
+    glavni_grad INT,
+    FOREIGN KEY (glavni_grad) REFERENCES grad(id)
+);
+CREATE TABLE grad (
+    id INT PRIMARY KEY,
+    naziv TEXT,
+    broj_stanovnika INT,
+    drzava INT,
+    FOREIGN KEY (drzava) REFERENCES drzava(id)
+);
