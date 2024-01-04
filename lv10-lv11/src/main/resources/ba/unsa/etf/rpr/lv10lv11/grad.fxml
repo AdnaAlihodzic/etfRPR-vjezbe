@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="304.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="54.0" prefWidth="327.0">
+            <children>
+                <Label text="Naziv:">
+                    <HBox.margin>
+                        <Insets left="15.0" top="20.0" />
+                    </HBox.margin></Label>
+                <TextField fx:id="fieldNaziv" prefHeight="26.0" prefWidth="175.0">
+                    <HBox.margin>
+                        <Insets left="62.0" top="15.0" />
+                    </HBox.margin></TextField>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <HBox prefHeight="38.0" prefWidth="304.0">
+            <children>
+                <Label text="Broj stanovnika:">
+                    <HBox.margin>
+                        <Insets left="15.0" right="10.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="fieldBrojStanovnika" prefHeight="26.0" prefWidth="175.0" />
+            </children></HBox>
+        <HBox prefHeight="39.0" prefWidth="327.0">
+            <children>
+                <Label text="Država:">
+                    <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                    </HBox.margin></Label>
+                <ChoiceBox fx:id="choiceDrzava" prefWidth="150.0">
+                    <HBox.margin>
+                        <Insets left="55.0" />
+                    </HBox.margin></ChoiceBox>
+            </children>
+        </HBox>
+        <ButtonBar prefHeight="33.0" prefWidth="244.0">
+            <buttons>
+                <Button fx:id="btnOk" minWidth="72.0" mnemonicParsing="false" onAction="#onBtnOkClick" prefHeight="26.0" prefWidth="85.0" text="Ok" />
+                <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onBtnCancelClick" text="Cancel" />
+            </buttons>
+            <VBox.margin>
+                <Insets right="20.0" />
+            </VBox.margin>
+        </ButtonBar>
+    </children>
+</VBox>
