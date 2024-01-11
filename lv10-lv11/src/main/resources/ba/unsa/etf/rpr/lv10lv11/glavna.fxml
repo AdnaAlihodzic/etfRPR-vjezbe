@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab10.GlavnaController">
+    <children>
+        <TableView fx:id="tableViewGradovi" prefHeight="400.0" prefWidth="462.0">
+            <columns>
+                <TableColumn fx:id="nazivCol" prefWidth="145.1999832391739" text="Naziv">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="naziv" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="stanovnikaCol" prefWidth="118.0" text="Stanovnika">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="brojStanovnika" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="drzavaCol" prefWidth="198.0" text="Država">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="drzava" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <VBox prefHeight="400.0" prefWidth="143.0">
+            <children>
+                <Button fx:id="btnDodajGrad" mnemonicParsing="false" onAction="#onbtnDodajGradClick" prefHeight="26.0" prefWidth="132.0" text="Dodaj grad">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnDodajDrzavu" mnemonicParsing="false" onAction="#onbtnDodajDrzavuClick" prefHeight="26.0" prefWidth="137.0" text="Dodaj državu">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnIzmijeniGrad" mnemonicParsing="false" onAction="#onbtnIzmijeniGradClick" prefHeight="26.0" prefWidth="153.0" text="Izmijeni grad">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnIzmijeniDrzavu" mnemonicParsing="false" onAction="#onbtnIzmijeniDrzavuClick" prefHeight="26.0" prefWidth="148.0" text="Izmijeni državu">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnObrisiGrad" mnemonicParsing="false" onAction="#onbtnObrisiGradClick" prefHeight="26.0" prefWidth="159.0" text="Obriši grad">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnObrisiDrzavu" mnemonicParsing="false" onAction="#onbtnObrisiDrzavuClick" prefHeight="26.0" prefWidth="154.0" text="Obrisi državu">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</HBox>
