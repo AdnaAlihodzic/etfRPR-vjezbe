@@ -2,7 +2,7 @@
 
 Laboratorijske vježbe iz predmeta "Razvoj programskih rješenja".
 
-Tematske cjeline:
+# Tematske cjeline:
 - Uvod u razvoj softvera
 - Kolaboracija korištenjem git repozitorija
 - Java
@@ -14,5 +14,6 @@ Tematske cjeline:
 - Testiranje i provjera kvaliteta softvera
 - Napredne teme (Threads, Lambda, Reflection)
   
-#Languages and Tools:
-java intelij
+# Languages and Tools:
+- java
+- intelij
