@@ -1,4 +1,4 @@
-# etfRPR-vjezbe
+# etf-RPR-vjezbe
 
 Laboratorijske vježbe iz predmeta "Razvoj programskih rješenja".
 
@@ -14,3 +14,5 @@ Tematske cjeline:
 - Testiranje i provjera kvaliteta softvera
 - Napredne teme (Threads, Lambda, Reflection)
   
+#Languages and Tools:
+java intelij
